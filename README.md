@@ -85,6 +85,13 @@ python3 scripts/generate_summary.py > src/SUMMARY.md
 python3 scripts/check_links.py
 ```
 
+### Show Wiki Statistics
+```bash
+python3 scripts/wiki_stats.py
+# Or using make
+make stats
+```
+
 ### Custom Scripts
 Add your own scripts in `scripts/` directory for:
 - Generating indices

@@ -1,4 +1,4 @@
-.PHONY: help build serve clean test check-links generate-summary install
+.PHONY: help build serve clean test check-links generate-summary install stats
 
 help: ## Show this help message
 	@echo "Available targets:"
@@ -32,6 +32,9 @@ check-links: ## Check for broken links
 generate-summary: ## Auto-generate SUMMARY.md from file structure
 	@echo "Generating SUMMARY.md..."
 	@python3 scripts/generate_summary.py --dry-run
+
+stats: ## Show wiki statistics
+	@python3 scripts/wiki_stats.py
 
 watch: ## Build and serve with live reload (alias for serve)
 	@$(MAKE) serve
