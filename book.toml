@@ -1,0 +1,55 @@
+[book]
+authors = ["copilot-swe-agent[bot]"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Avro Wiki"
+description = "A comprehensive wiki built with mdBook, supporting 15000+ markdown files from Obsidian"
+
+[build]
+build-dir = "book"
+create-missing = true
+use-default-preprocessors = true
+
+[preprocessor.links]
+# Support for Obsidian-style wikilinks [[link]]
+# This preprocessor will be used to handle internal links
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+git-repository-url = "https://github.com/606/avro-wiki-mdBook"
+edit-url-template = "https://github.com/606/avro-wiki-mdBook/edit/main/{path}"
+site-url = "/avro-wiki-mdBook/"
+cname = ""
+input-404 = "404.md"
+smart-punctuation = true
+mathjax-support = false
+copy-fonts = true
+additional-css = []
+additional-js = []
+no-section-label = false
+fold.enable = true
+fold.level = 1
+
+[output.html.search]
+enable = true
+limit-results = 30
+teaser-word-count = 30
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 1
+boost-paragraph = 1
+expand = true
+heading-split-level = 3
+
+[output.html.print]
+enable = true
+page-break = true
+
+[output.html.playground]
+editable = false
+copyable = true
+copy-js = true
+line-numbers = false
+runnable = false
